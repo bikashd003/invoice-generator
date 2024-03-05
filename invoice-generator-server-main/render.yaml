@@ -1,0 +1,5 @@
+preDeploy:
+  - name: Create Cache Directory
+    command: mkdir -p /opt/render/project/.cache/puppeteer
+  - name: Set Permissions
+    command: chmod -R 755 /opt/render/project/.cache/puppeteer
